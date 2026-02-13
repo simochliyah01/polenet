@@ -1,0 +1,414 @@
+.processus {
+    padding: 100px 20px;
+    background-color: var(--pole-dark-light);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .processus-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .section-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: var(--pole-green);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--pole-blue), var(--pole-green));
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  .section-subtitle {
+    max-width: 700px;
+    margin: 25px auto 0;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  
+  /* Processus Timeline */
+  .processus-timeline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 70px;
+    position: relative;
+  }
+  
+  /* Processus Step */
+  .processus-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 280px;
+  }
+  
+  /* Step Connector */
+  .step-connector {
+    position: absolute;
+    top: 75px;
+    left: calc(50% + 60px);
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .connector-line {
+    flex: 1;
+    height: 3px;
+    background: linear-gradient(to right, var(--pole-blue), var(--pole-green));
+    opacity: 0.5;
+  }
+  
+  .connector-arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid var(--pole-green);
+    opacity: 0.7;
+  }
+  
+  /* Step Card */
+  .step-card {
+    position: relative;
+    background: var(--pole-dark-card);
+    padding: 40px 25px 35px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    transition: all 0.4s ease;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .step-card:hover {
+    border-color: var(--pole-green);
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(16, 185, 129, 0.2);
+  }
+  
+  /* Step Number */
+  .step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--pole-green) 0%, var(--pole-green-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+  }
+  
+  /* Step Icon */
+  .step-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--pole-dark) 0%, var(--pole-dark-light) 100%);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--pole-blue);
+    margin: 15px auto 25px;
+    transition: all 0.4s ease;
+  }
+  
+  .step-card:hover .step-icon {
+    background: linear-gradient(135deg, var(--pole-blue) 0%, var(--pole-blue-light) 100%);
+    border-color: var(--pole-blue);
+    color: var(--white);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+  }
+  
+  .step-title {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .step-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  /* Processus CTA */
+  .processus-cta {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 50px;
+    background: linear-gradient(135deg, var(--pole-dark-card) 0%, var(--pole-dark) 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .cta-content h3 {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+  
+  .btn-processus {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--pole-green) 0%, var(--pole-green-dark) 100%);
+    color: var(--white);
+    padding: 16px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.3);
+  }
+  
+  .btn-processus:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+  }
+  
+  /* ============ RESPONSIVE ============ */
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .processus {
+      padding: 80px 20px;
+    }
+  
+    .section-title {
+      font-size: 2.2rem;
+    }
+  
+    .processus-timeline {
+      gap: 10px;
+      margin-bottom: 60px;
+    }
+  
+    .processus-step {
+      max-width: 240px;
+    }
+  
+    .step-connector {
+      left: calc(50% + 50px);
+      width: calc(100% - 30px);
+    }
+  
+    .step-card {
+      padding: 35px 20px 30px;
+    }
+  
+    .step-icon {
+      width: 70px;
+      height: 70px;
+      font-size: 1.7rem;
+    }
+  
+    .step-title {
+      font-size: 1.1rem;
+    }
+  
+    .step-description {
+      font-size: 0.85rem;
+    }
+  
+    .cta-box {
+      padding: 35px 40px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .processus {
+      padding: 60px 15px;
+    }
+  
+    .section-header {
+      margin-bottom: 50px;
+    }
+  
+    .section-title {
+      font-size: 1.9rem;
+    }
+  
+    .section-subtitle {
+      font-size: 1rem;
+    }
+  
+    .processus-timeline {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .processus-step {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .step-connector {
+      display: none;
+    }
+  
+    .step-card {
+      padding: 35px 25px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step-number {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin-bottom: 15px;
+    }
+  
+    .step-icon {
+      width: 65px;
+      height: 65px;
+      font-size: 1.5rem;
+      margin: 0 0 20px 0;
+    }
+  
+    .step-title {
+      font-size: 1.1rem;
+    }
+  
+    .step-description {
+      font-size: 0.9rem;
+    }
+  
+    .cta-box {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 25px;
+      gap: 25px;
+    }
+  
+    .cta-content h3 {
+      font-size: 1.25rem;
+    }
+  
+    .cta-content p {
+      font-size: 0.95rem;
+    }
+  
+    .btn-processus {
+      width: 100%;
+      padding: 14px 30px;
+    }
+  }
+  
+  /* Small Mobile */
+  @media (max-width: 480px) {
+    .processus {
+      padding: 50px 15px;
+    }
+  
+    .section-title {
+      font-size: 1.7rem;
+    }
+  
+    .section-subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .processus-timeline {
+      gap: 20px;
+    }
+  
+    .step-card {
+      padding: 30px 20px 25px;
+    }
+  
+    .step-number {
+      width: 36px;
+      height: 36px;
+      font-size: 1rem;
+    }
+  
+    .step-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 1.4rem;
+    }
+  
+    .step-title {
+      font-size: 1.05rem;
+    }
+  
+    .step-description {
+      font-size: 0.85rem;
+    }
+  
+    .cta-box {
+      padding: 25px 20px;
+    }
+  
+    .cta-content h3 {
+      font-size: 1.15rem;
+    }
+  
+    .cta-content p {
+      font-size: 0.9rem;
+    }
+  }

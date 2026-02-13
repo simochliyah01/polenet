@@ -1,0 +1,328 @@
+.valeurs {
+    padding: 100px 20px;
+    background-color: var(--pole-dark-light);
+  }
+  
+  .valeurs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .section-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: var(--pole-green);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--pole-blue), var(--pole-green));
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  /* Valeurs Grid */
+  .valeurs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .valeurs-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .valeurs-row-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .valeurs-row-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Valeur Card */
+  .valeur-card {
+    position: relative;
+    background: var(--pole-dark-card);
+    padding: 40px 30px 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+  }
+  
+  .valeur-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pole-green);
+    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.15);
+  }
+  
+  /* Valeur Line (top decoration) */
+  .valeur-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(to right, var(--pole-blue), var(--pole-green));
+    border-radius: 0 0 4px 4px;
+  }
+  
+  /* Valeur Icon */
+  .valeur-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--pole-blue) 0%, var(--pole-blue-light) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--white);
+    margin: 0 auto 20px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+  }
+  
+  .valeur-card:hover .valeur-icon {
+    background: linear-gradient(135deg, var(--pole-green) 0%, var(--pole-green-dark) 100%);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+  }
+  
+  .valeur-title {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .valeur-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  /* Valeurs CTA */
+  .valeurs-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--pole-dark-card) 0%, var(--pole-dark) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+  }
+  
+  .valeurs-cta p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+  }
+  
+  .btn-valeurs {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--pole-blue) 0%, var(--pole-blue-light) 100%);
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+  }
+  
+  .btn-valeurs:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+  }
+  
+  /* ============ RESPONSIVE ============ */
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .valeurs {
+      padding: 80px 20px;
+    }
+  
+    .section-title {
+      font-size: 2.2rem;
+    }
+  
+    .valeurs-row-top {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .valeurs-row-bottom {
+      gap: 20px;
+    }
+  
+    .valeur-card {
+      padding: 35px 25px 25px;
+    }
+  
+    .valeur-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+  
+    .valeur-title {
+      font-size: 1.1rem;
+    }
+  
+    .valeur-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .valeurs {
+      padding: 60px 15px;
+    }
+  
+    .section-header {
+      margin-bottom: 40px;
+    }
+  
+    .section-title {
+      font-size: 1.9rem;
+    }
+  
+    .valeurs-grid {
+      gap: 20px;
+    }
+  
+    .valeurs-row-top {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .valeurs-row-top .valeur-card:last-child {
+      grid-column: span 2;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .valeurs-row-bottom {
+      grid-template-columns: 1fr 1fr;
+      max-width: 100%;
+    }
+  
+    .valeur-card {
+      padding: 30px 20px 25px;
+    }
+  
+    .valeur-icon {
+      width: 55px;
+      height: 55px;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+  
+    .valeur-title {
+      font-size: 1rem;
+    }
+  
+    .valeur-description {
+      font-size: 0.85rem;
+    }
+  
+    .valeurs-cta {
+      margin-top: 40px;
+      padding: 30px 20px;
+    }
+  
+    .valeurs-cta p {
+      font-size: 1rem;
+    }
+  
+    .btn-valeurs {
+      padding: 12px 25px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Small Mobile */
+  @media (max-width: 480px) {
+    .valeurs {
+      padding: 50px 15px;
+    }
+  
+    .section-title {
+      font-size: 1.7rem;
+    }
+  
+    .valeurs-row-top {
+      grid-template-columns: 1fr;
+    }
+  
+    .valeurs-row-top .valeur-card:last-child {
+      grid-column: span 1;
+      max-width: 100%;
+    }
+  
+    .valeurs-row-bottom {
+      grid-template-columns: 1fr;
+    }
+  
+    .valeur-card {
+      padding: 30px 20px 25px;
+    }
+  
+    .valeur-line {
+      width: 50%;
+    }
+  
+    .valeur-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+  
+    .valeur-title {
+      font-size: 1.05rem;
+    }
+  
+    .valeur-description {
+      font-size: 0.9rem;
+    }
+  
+    .valeurs-cta p {
+      font-size: 0.95rem;
+    }
+  
+    .btn-valeurs {
+      width: 100%;
+      text-align: center;
+    }
+  }
